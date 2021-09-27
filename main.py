@@ -2,7 +2,6 @@ import datetime
 import os
 import json
 import pytz
-from requests.api import delete
 
 from src.gcalendar import *
 from src.grr import *
