@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+    runner:
+        build: ./docker/
+        command: poetry run python main.py
+        volumes:
+            - ./token.json:/app/token.json
+            - ./credentials.json:/app/credentials.json
